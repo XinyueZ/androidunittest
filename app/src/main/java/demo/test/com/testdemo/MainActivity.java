@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends Activity {
@@ -38,4 +39,8 @@ public class MainActivity extends Activity {
 	}
 
 	public static final int LAYOUT = R.layout.activity_main;
+
+	public void clickMe(View view) {
+		ReceiverActivity.showInstance(this, "Hello receiver!");
+	}
 }
