@@ -6,10 +6,12 @@ import android.test.suitebuilder.annotation.SmallTest;
 import android.widget.TextView;
 
 /**
- * Created by czhao on 04.11.14.
+ * Sample test-case for the {@link demo.test.com.testdemo.MainActivity}.
+ *
+ * @author Xinyue Zhao
  */
-public final class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity>{
-	public MainActivityTest( ) {
+public final class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
+	public MainActivityTest() {
 		super(MainActivity.class);
 	}
 
@@ -17,6 +19,6 @@ public final class MainActivityTest extends ActivityInstrumentationTestCase2<Mai
 	public void testHelloTvNotNull() {
 		Activity activity = getActivity();
 		TextView helloTv = (TextView) activity.findViewById(R.id.hello_tv);
-		assertNotNull("textview for hello is not available", helloTv);
+		assertNotNull("TextView shows helloworld was not available.", helloTv);
 	}
 }

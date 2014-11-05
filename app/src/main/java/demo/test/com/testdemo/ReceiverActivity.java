@@ -10,7 +10,7 @@ import android.widget.TextView;
  * An {@link android.app.Activity} that can get an {@link android.content.Intent} and show some information of it.
  */
 public final class ReceiverActivity extends Activity {
-	private static final String EXTRAS_INTENT_TEXT = "demo.test.com.testdemo.INTENT_TEXT";
+	public static final String EXTRAS_INTENT_TEXT = "demo.test.com.testdemo.INTENT_TEXT";
 	private static final int LAYOUT = R.layout.activity_receiver;
 	private TextView mIntentTv;
 

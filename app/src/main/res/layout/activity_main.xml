@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button android:onClick="clickMe"
+    <Button android:onClick="clickMe" android:id="@+id/click_me_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="click me to receiver" />
