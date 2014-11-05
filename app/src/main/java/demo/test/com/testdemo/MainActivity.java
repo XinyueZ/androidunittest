@@ -11,7 +11,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(LAYOUT);
 	}
 
 
@@ -36,4 +36,6 @@ public class MainActivity extends Activity {
 
 		return super.onOptionsItemSelected(item);
 	}
+
+	public static final int LAYOUT = R.layout.activity_main;
 }
